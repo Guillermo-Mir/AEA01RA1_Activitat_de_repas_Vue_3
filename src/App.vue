@@ -1,11 +1,9 @@
 <script setup></script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <h1>Gestor de Tasques</h1>
+  <input type='text' placeholder='Escriu una nova tasca'>
+  <button>Afegir</button>
 </template>
 
 <style scoped></style>

@@ -32,7 +32,8 @@ const afegirTasca = () => {
   //Añadimos la nueva tarea al array
   tasques.value.push({
     id: nouId,
-    text: novaTasca.value
+    nom: novaTasca.value,
+    completada: false
   })
 
   //Limpiamos la entrada de texto

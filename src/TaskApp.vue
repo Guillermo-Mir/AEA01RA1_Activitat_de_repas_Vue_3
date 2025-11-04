@@ -12,6 +12,7 @@ const tasques = ref([
 const novaTasca = ref('')
 const mostrarPendents = ref(false)
 
+//Afegir tasca
 const afegirTasca = () => {
   if (novaTasca.value.trim() === '') return
   let nouId = 1
@@ -26,20 +27,24 @@ const afegirTasca = () => {
   novaTasca.value = ''
 }
 
+//Eliminar Tasca
 const eliminarTasca = (id) => {
   tasques.value = tasques.value.filter(t => t.id !== id)
 }
 
+//Marcar Tasca
 const marcarTasca = (t) => {
   t.completada = !t.completada
 }
 
+//Filtrar tasques
 const tasquesFiltrades = computed(() => {
   return mostrarPendents.value
     ? tasques.value.filter(t => !t.completada)
     : tasques.value
 })
 
+//Comptador de tasques
 const totalTasques = computed(() => tasques.value.length)
 const pendents = computed(() => tasques.value.filter(t => !t.completada).length)
 </script>

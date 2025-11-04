@@ -90,13 +90,6 @@ const pendents = computed(() => tasques.value.filter(t => !t.completada).length)
 </template>
 
 <style scoped>
-/* === Paleta ===
-   Fondo: #f8f6f2 (crema claro)
-   Tonos arena: #d9cbbd
-   Terracota: #c27b48
-   Marrón oscuro: #5a4636
-   Gris cálido: #8b8178
-*/
 
 body {
   background-color: #f8f6f2;
@@ -120,7 +113,7 @@ h1 {
   letter-spacing: 0.5px;
 }
 
-/* === Input + botón === */
+
 .nova-tasca {
   display: flex;
   gap: 10px;
@@ -185,7 +178,6 @@ h1 {
   background-color: #a88e73;
 }
 
-/* === Filtro === */
 .filtre {
   margin-bottom: 25px;
   color: #5a4636;
@@ -196,7 +188,7 @@ h1 {
   margin-right: 8px;
 }
 
-/* === Lista de tareas === */
+
 .llista-tasques {
   list-style: none;
   padding: 0;
@@ -237,7 +229,6 @@ h1 {
   gap: 10px;
 }
 
-/* === Resumen === */
 .resum {
   margin-top: 25px;
   color: #5a4636;
